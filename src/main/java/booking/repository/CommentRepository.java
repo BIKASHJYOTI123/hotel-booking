@@ -5,7 +5,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import booking.model.Comment;
 
-
+@Repository
 public interface CommentRepository extends CrudRepository<Comment, Long> {
 	
 	Comment findByText(String text);
